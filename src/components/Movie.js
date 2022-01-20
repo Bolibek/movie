@@ -3,7 +3,7 @@ export default function Movie(props){
   return(
     <div key={imdbID} className="movie">
       <div>
-        <img src={Poster} className="" />
+        <img src={Poster} alt={Title} />
       </div>
       <div>
         <span>{Title}<i></i></span>
