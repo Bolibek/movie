@@ -8,7 +8,7 @@ export default function Search(props) {
 	const [type, setType] = useState("all");
 
 	const handleKey = (e) => {
-		if (e.key === "enter") {
+		if (e.key === "Enter") {
 			searchMovies(search, type);
 		}
 	};
