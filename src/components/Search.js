@@ -18,7 +18,7 @@ export default function Search(props) {
 	};
 	return (
 		<div>
-			<div className="search-panel">
+			<div className="input-field">
 				<input
 					className="input"
 					type="search"
@@ -28,7 +28,7 @@ export default function Search(props) {
 					onKeyDown={handleKey}
 				/>
 				<button
-					className="btn btn-primary"
+					className="btn search-btn"
 					onClick={() => searchMovies(search, type)}
 				>
 					Search Movies
