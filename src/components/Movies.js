@@ -5,7 +5,7 @@ export default function Movies(props){
     <div className="grid">
       {movies.length ? movies.map(movie => (
         <Movie key={movie.index} {...movie}/>
-      )) : <h4>Nothing found</h4>}
+      )) : <h4 className="not-found">Nothing found</h4>}
     </div>
   )
 }
