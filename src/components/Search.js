@@ -1,10 +1,8 @@
 import React, { useState } from "react";
-import "./Search";
-
 
 export default function Search(props) {
 	const { searchMovies } = props;
-	const [search, setSearch] = useState("");
+	const [search, setSearch] = useState("panda");
 	const [type, setType] = useState("all");
 
 	const handleKey = (e) => {
@@ -12,15 +10,17 @@ export default function Search(props) {
 			searchMovies(search, type);
 		}
 	};
+
 	const handleFilter = (e) => {
 		setType(e.target.dataset.type);
 		searchMovies(search, e.target.dataset.type);
 	};
+
 	return (
 		<div>
 			<div className="input-field">
 				<input
-					className="input"
+					className="validate"
 					type="search"
 					placeholder="Search Movies"
 					value={search}
